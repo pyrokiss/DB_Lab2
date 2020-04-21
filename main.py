@@ -35,31 +35,31 @@ cursor = connection.cursor()
 
 cursor.execute(queryGenres)
 
-resultGenres = cursor.fetchall()
+ResultGenres = cursor.fetchall()
 print("Query 1\n")
 print("{:20}|{}".format("GameGenres", "Total"))
 print("--------------------------------------")
-for row in resultGenres:
+for row in ResultGenres:
     print("{:20}|{:5}".format(row[0], row[1]))
 print("\n")
 
 cursor.execute(queryPlatforms)
 
-resultPlatforms = cursor.fetchall()
+ResultPlatforms = cursor.fetchall()
 print("Query 2\n")
 print("{:<30}|{}".format('GamePlatforms', 'Percent'))
 print("--------------------------------------")
-for row in resultPlatforms:
+for row in ResultPlatforms:
     print("{:<30}|{}".format(*row))
 
 
 cursor.execute(queryRelease)
 
-resultRelease = cursor.fetchall()
+ResultRelease = cursor.fetchall()
 print("Query 3\n")
 print("{:<16}|{}".format('Release_date', 'GameRelease'))
 print("--------------------------------------")
-for row in result_dynamic:
+for row in ResultReleae:
     print("{:<16}|{}".format(*row))
 
 cursor.close()
