@@ -29,8 +29,6 @@ ALTER TABLE Developers ADD CONSTRAINT developer_pk PRIMARY KEY (developer);
 
 CREATE TABLE Rating(
     rating VARCHAR(50) NOT NULL,
-    metascore NUMBER(5,2) NOT NULL,
-    user_score NUMBER(5,2) NOT NULL
 );
 ALTER TABLE Rating ADD CONSTRAINT rating_pk PRIMARY KEY (rating);
 
@@ -47,10 +45,6 @@ CREATE TABLE GamesPlatforms(
 ALTER TABLE GamesPlatforms ADD CONSTRAINT gname_platform_pk PRIMARY KEY (gname);
 
 --FOREIGN KEY GAMES--
-
-ALTER TABLE Games
-    ADD CONSTRAINT gname_fk FOREIGN KEY ( gname )
-        REFERENCES GamesGenres ( gname );
         
 ALTER TABLE Games
     ADD CONSTRAINT rating_fk FOREIGN KEY ( rating )
