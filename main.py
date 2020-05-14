@@ -59,7 +59,7 @@ ResultRelease = cursor.fetchall()
 print("Query 3\n")
 print("{:<16}|{}".format('Release_date', 'GameRelease'))
 print("--------------------------------------")
-for row in ResultReleae:
+for row in ResultRelease:
     print("{:<16}|{}".format(*row))
 
 cursor.close()
