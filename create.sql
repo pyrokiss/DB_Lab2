@@ -1,3 +1,12 @@
+DROP TABLE Games;
+DROP TABLE Publishers;
+DROP TABLE Developers;
+DROP TABLE Rating;
+DROP TABLE GamesPlatforms;
+DROP TABLE GamesGenres;
+DROP TABLE Platforms;
+DROP TABLE Genres;
+
 CREATE TABLE Games(
     gname VARCHAR(100) NOT NULL,
     rating VARCHAR(5) NOT NULL,
