@@ -12,7 +12,7 @@ CREATE TABLE Games(
     rating VARCHAR(5) NOT NULL,
     publisher VARCHAR(50) NOT NULL,
     developer VARCHAR(50) NOT NULL,
-    release_date DATE NOT NULL
+    release_date VARCHAR(50) NOT NULL
 );
 ALTER TABLE Games ADD CONSTRAINT gname_pk PRIMARY KEY (gname);
 
